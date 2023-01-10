@@ -1,14 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 //Variables
-$items-menu: #878d96;
-$items-menu_active: #f6337a;
+
+$montserrat : 'Montserrat',
+sans-serif;
+$mulish : 'Mulish',
+sans-serif;
+$cPrimary: #575454;
+$cGray: #CAC6C6;
+
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
 }
-h1 {
-  padding: 10px 24px;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box_image {
+    width: 270px;
+    height: 570px;
+    position: relative;
+
+    .content_app {
+      position: absolute;
+      width: 253px;
+      border-radius: 21px 21px 0 0;
+      background-color: #FAF4F2;
+      height: calc(100% - 70px + 11px);
+      left: 6.5px;
+      top: 11px;
+
+      header {
+        width: 100%;
+        height: 70px;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        .avatar {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+          }
+
+          h5 {
+            font-family: $mulish;
+          }
+        }
+      }
+
+      .view {
+        height: calc(100% - 110px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0 10px;
+        position: relative;
+
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar:vertical {
+          width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #cccccc;
+          border-radius: 10px;
+        }
+
+        h2 {
+          font-family: $montserrat;
+          font-weight: bold;
+          color: $cPrimary;
+        }
+
+        .available {
+          display: flex;
+          align-items: center;
+
+          .start {
+            svg {
+              path {
+                fill: #F8C74B;
+              }
+            }
+          }
+
+          p {
+            font-size: 14px;
+            font-family: $mulish;
+            color: $cGray;
+          }
+        }
+
+        .search {
+          margin: 15px 0;
+          background-color: white;
+          padding: 8px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-between;
+
+          input {
+            border: none;
+            outline: none;
+            font-family: $mulish;
+            color: $cGray;
+          }
+
+          svg {
+            width: 16px;
+            height: 16px;
+
+            path {
+              fill: $cGray;
+            }
+          }
+        }
+
+        .conection {
+          margin: 10px 0;
+
+          .title_conection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+              font-size: 16px;
+              color: $cPrimary;
+              font-family: $montserrat;
+            }
+
+            p {
+              font-size: 12px;
+              font-family: $mulish;
+              color: $cGray;
+            }
+          }
+
+          .list_contact {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+            }
+
+            .counter {
+              background-color: $cGray;
+              padding: 10px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+
+        .projects {
+          background-color: white;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          padding: 5px 10px;
+          bottom: 20;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+
+          .title_projects {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: $montserrat;
+
+            h3 {
+              font-size: 16px;
+              color: $cPrimary;
+            }
+
+            p {
+              font-size: 12px;
+              font-family: $mulish;
+              color: $cGray;
+            }
+          }
+
+          .card {
+            margin: 10px 0;
+            border: 1px solid $cGray;
+            border-radius: 5px;
+            padding: 5px;
+
+            .header_card {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-family: $mulish;
+              font-size: 12px;
+              color: $cGray;
+            }
+
+            .title_card {
+              h4 {
+                font-family: $montserrat;
+                font-size: 14px;
+                color: $cPrimary;
+              }
+            }
+
+            .warning_card {
+              margin-top: 10px;
+              display: flex;
+              align-items: center;
+              font-family: $mulish;
+              font-size: 12px;
+              color: $cPrimary;
+              font-weight: 700;
+
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .menu_navigation {
+        position: sticky;
+        width: 254px;
+        background-color: white;
+        box-shadow: 0px -2px 4px #dde1e6;
+        bottom: 0;
+        height: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+
+        .menu_item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 0 8px;
+          width: calc(100% / 4);
+          cursor: pointer;
+
+          svg {
+            &.ico_box {
+              path {
+                stroke: $cGray;
+                fill: none;
+              }
+
+            }
+
+            path {
+              // stroke: $cGray;
+              fill: $cGray;
+
+              &.menu_item_active {
+                fill: black;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+
+    }
+  }
 }

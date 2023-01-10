@@ -1,91 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Menu Responsive</title>
-  </head>
-  <body>
-    <h1>Menu Resposive</h1>
-    <nav class="menu_navigation">
-      <div class="menu_item">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-            stroke="#878D96"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="menu_item_active"
-          />
-        </svg>
-        <a href="#" class="menu_item_active">Buscar</a>
-      </div>
-      <div class="menu_item">
-        <svg
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5.19302 6.31802C3.43566 8.07538 3.43566 10.9246 5.19302 12.682L12.8751 20.364L20.557 12.682C22.3143 10.9246 22.3143 8.07538 20.557 6.31802C18.7996 4.56066 15.9504 4.56066 14.193 6.31802L12.8751 7.63609L11.557 6.31802C9.79962 4.56066 6.95038 4.56066 5.19302 6.31802Z"
-            stroke="#878D96"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
 
-        <a href="#">Favoritos</a>
-      </div>
-      <div class="menu_item">
-        <svg
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M3.625 4C3.625 3.44772 4.07272 3 4.625 3H20.625C21.1773 3 21.625 3.44772 21.625 4V6.58579C21.625 6.851 21.5196 7.10536 21.3321 7.29289L14.9179 13.7071C14.7304 13.8946 14.625 14.149 14.625 14.4142V17L10.625 21V14.4142C10.625 14.149 10.5196 13.8946 10.3321 13.7071L3.91789 7.29289C3.73036 7.10536 3.625 6.851 3.625 6.58579V4Z"
-            stroke="#878D96"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Menu Responsive</title>
+</head>
 
-        <a href="#">Filtrar</a>
-      </div>
-      <div class="menu_item">
-        <svg
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M3.375 3H5.375L5.775 5M7.375 13H17.375L21.375 5H5.775M7.375 13L5.775 5M7.375 13L5.08211 15.2929C4.45214 15.9229 4.89831 17 5.78921 17H17.375M17.375 17C16.2704 17 15.375 17.8954 15.375 19C15.375 20.1046 16.2704 21 17.375 21C18.4796 21 19.375 20.1046 19.375 19C19.375 17.8954 18.4796 17 17.375 17ZM9.375 19C9.375 20.1046 8.47957 21 7.375 21C6.27043 21 5.375 20.1046 5.375 19C5.375 17.8954 6.27043 17 7.375 17C8.47957 17 9.375 17.8954 9.375 19Z"
-            stroke="#878D96"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+<body>
 
-        <a href="#">Carrito</a>
+  <div class="container">
+    <div class="box_image">
+      <div class="content_app">
+        <header>
+          <div class="avatar">
+            <img src="img/image5.png" alt="">
+            <h5>Hi, Kira!</h5>
+          </div>
+          <div class="notify">
+            <span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 6.50001C21 8.43001 19.43 10 17.5 10C15.57 10 14 8.43001 14 6.50001C14 4.57001 15.57 3.00001 17.5 3.00001C19.43 3.00001 21 4.57001 21 6.50001ZM19 11.79C18.5 11.92 18 12 17.5 12C16.0421 11.9974 14.6447 11.4171 13.6138 10.3862C12.583 9.3553 12.0026 7.95788 12 6.50001C12 5.03001 12.58 3.70001 13.5 2.71001C13.3185 2.48755 13.0897 2.30838 12.8302 2.18555C12.5707 2.06272 12.2871 1.99934 12 2.00001C10.9 2.00001 10 2.90001 10 4.00001V4.29001C7.03 5.17001 5 7.90001 5 11V17L3 19V20H21V19L19 17V11.79ZM12 23C13.11 23 14 22.11 14 21H10C10 21.5304 10.2107 22.0391 10.5858 22.4142C10.9609 22.7893 11.4696 23 12 23Z"
+                  fill="black" />
+                <circle cx="17.5" cy="6.5" r="3.5" fill="#F93030" />
+              </svg>
+
+            </span>
+          </div>
+
+        </header>
+        <div class="view">
+          <h2>Tasks for today:</h2>
+          <div class="available">
+            <span class="start">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.825 22L8.15 14.4L2 10H9.6L12 2L14.4 10H22L15.85 14.4L18.175 22L12 17.3L5.825 22Z"
+                  fill="black" />
+              </svg>
+            </span>
+            <p>5 available</p>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z"
+                fill="black" />
+            </svg>
+
+          </div>
+          <div class="conection">
+            <div class="title_conection">
+              <h3>Last connections</h3>
+              <p>Se all</p>
+            </div>
+            <div class="list_contact">
+              <img src="img/image4.png" alt="">
+              <img src="img/image3.png" alt="">
+              <img src="img/image2.png" alt="">
+              <img src="img/image1.png" alt="">
+              <div class="counter">
+                <p>+5</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="title_projects">
+              <h3>Active projects</h3>
+              <p>Se all</p>
+            </div>
+            <div class="card">
+              <div class="header_card">
+                <p>Número 10</p>
+                <p>4h</p>
+              </div>
+              <div class="title_card">
+                <h4>Blog and social post</h4>
+              </div>
+              <div class="warning_card">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM12 2C6.47 2 2 6.5 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C9.87827 20 7.84344 19.1571 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12C4 9.87827 4.84285 7.84344 6.34315 6.34315C7.84344 4.84285 9.87827 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z"
+                    fill="black" />
+                </svg>
+
+                <p>Deadline is today</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="header_card">
+                <p>Número 10</p>
+                <p>4h</p>
+              </div>
+              <div class="title_card">
+                <h4>Blog and social post</h4>
+              </div>
+              <div class="warning_card">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM12 2C6.47 2 2 6.5 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C9.87827 20 7.84344 19.1571 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12C4 9.87827 4.84285 7.84344 6.34315 6.34315C7.84344 4.84285 9.87827 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z"
+                    fill="black" />
+                </svg>
+
+                <p>Deadline is today</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="header_card">
+                <p>Número 10</p>
+                <p>4h</p>
+              </div>
+              <div class="title_card">
+                <h4>Blog and social post</h4>
+              </div>
+              <div class="warning_card">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM12 2C6.47 2 2 6.5 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C9.87827 20 7.84344 19.1571 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12C4 9.87827 4.84285 7.84344 6.34315 6.34315C7.84344 4.84285 9.87827 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z"
+                    fill="black" />
+                </svg>
+
+                <p>Deadline is today</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="header_card">
+                <p>Número 10</p>
+                <p>4h</p>
+              </div>
+              <div class="title_card">
+                <h4>Blog and social post</h4>
+              </div>
+              <div class="warning_card">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM12 2C6.47 2 2 6.5 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C9.87827 20 7.84344 19.1571 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12C4 9.87827 4.84285 7.84344 6.34315 6.34315C7.84344 4.84285 9.87827 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z"
+                    fill="black" />
+                </svg>
+
+                <p>Deadline is today</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu_navigation">
+          <div class="menu_item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="menu_item_active"
+                d="M10 19V14H14V19C14 19.55 14.45 20 15 20H18C18.55 20 19 19.55 19 19V12H20.7C21.16 12 21.38 11.43 21.03 11.13L12.67 3.6C12.29 3.26 11.71 3.26 11.33 3.6L2.97001 11.13C2.63001 11.43 2.84001 12 3.30001 12H5.00001V19C5.00001 19.55 5.45001 20 6.00001 20H9.00001C9.55001 20 10 19.55 10 19Z"
+                fill="black" />
+            </svg>
+          </div>
+          <div class="menu_item">
+            <svg class="ico_box" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 4H4C2.89543 4 2 4.89543 2 6V7C2 8.10457 2.89543 9 4 9H20C21.1046 9 22 8.10457 22 7V6C22 4.89543 21.1046 4 20 4Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M12 13V20M9 16L12 13L15 16M4 9V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H8M20 9V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H16"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </div>
+          <div class="menu_item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 22C4.45 22 3.979 21.8043 3.587 21.413C3.19567 21.021 3 20.55 3 20V6C3 5.45 3.19567 4.97933 3.587 4.588C3.979 4.196 4.45 4 5 4H6V2H8V4H16V2H18V4H19C19.55 4 20.021 4.196 20.413 4.588C20.8043 4.97933 21 5.45 21 6V20C21 20.55 20.8043 21.021 20.413 21.413C20.021 21.8043 19.55 22 19 22H5ZM5 20H19V10H5V20ZM5 8H19V6H5V8ZM5 8V6V8Z"
+                fill="black" />
+            </svg>
+
+          </div>
+          <div class="menu_item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7 16C7.28333 16 7.521 15.904 7.713 15.712C7.90433 15.5207 8 15.2833 8 15C8 14.7167 7.90433 14.479 7.713 14.287C7.521 14.0957 7.28333 14 7 14C6.71667 14 6.479 14.0957 6.287 14.287C6.09567 14.479 6 14.7167 6 15C6 15.2833 6.09567 15.5207 6.287 15.712C6.479 15.904 6.71667 16 7 16ZM6 13H8V8H6V13ZM10 15H18V13H10V15ZM10 11H18V9H10V11ZM4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.196 19.021 2 18.55 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.97933 4.196 3.45 4 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.8043 4.97933 22 5.45 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.021 19.8043 20.55 20 20 20H4ZM4 18H20V6H4V18ZM4 18V6V18Z"
+                fill="black" />
+            </svg>
+
+          </div>
+
+        </div>
       </div>
-    </nav>
-  </body>
+      <img src="img/mockup.png" alt="">
+    </div>
+  </div>
+
+</body>
+
 </html>
